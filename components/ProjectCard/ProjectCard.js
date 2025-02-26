@@ -5,20 +5,20 @@ export const ProjectCard = (project) => `
   <img src=${project.image} alt="${project.title}">
   <div>
     <a href="${project.github}" target="_blank">
-      <img src="/public/github_link.jpeg" alt="GitHub Icon">
+      <img src="/images/github_link.jpeg" alt="GitHub Icon">
     </a>
     <a href="${project.link}" target="_blank">
-      <img src="/public/link.png" alt="Link Icon">
+      <img src="/images/link.png" alt="Link Icon">
     </a>
   </div>
   <div class="header">
     <h2>${project.title}</h2>
     <div>
       <a href="${project.github}" target="_blank">
-        <img src="/public/github_link.jpeg" alt="GitHub Icon">
+        <img src="/images/github_link.jpeg" alt="GitHub Icon">
       </a>
       <a href="${project.link}" target="_blank">
-        <img src="/public/link.png" alt="Link Icon">
+        <img src="/images/link.png" alt="Link Icon">
       </a>
     </div>
   </div>

@@ -39,8 +39,8 @@ export const Navbar = () => `
     </li>
     <li>
       <button id="themeBtn">
-        <img src="/public/sun.png">
-        <img src="/public/moon.png">
+        <img src="/images/sun.png">
+        <img src="/images/moon.png">
         <div><div>
       </button>
     </li>

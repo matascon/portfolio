@@ -10,11 +10,11 @@ export const Contact = () => {
       <p>For sure, you can do it via Gmail or WhatsApp</p>
       <ul>
         <li>
-          <img src="gmail_icon.png" class="gmail-button">
+          <img src="/images/gmail_icon.png" class="gmail-button">
         </li>
         <li>
           <a href="https://api.whatsapp.com/send?phone=632399079" target="_blank">
-            <img src="whatsapp_icon.png">
+            <img src="/images/whatsapp_icon.png">
           </a>  
         </li>
       </ul>

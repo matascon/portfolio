@@ -1,0 +1,121 @@
+nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 7.5rem;
+  flex-wrap: wrap;
+}
+
+nav > h2 {
+  font-size: 1.5rem;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+nav p {
+  background: linear-gradient(to right, var(--primary-dark) 50%, var(--highlight) 50%);
+  background-size: 200% 100%;
+  background-position: 0 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 400ms ease-in-out;
+}
+
+.nav-p-light {
+  background: linear-gradient(to right, var(--primary-light) 50%, var(--highlight) 50%);
+  background-size: 200% 100%;
+  background-position: 0 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav p:hover {
+  cursor: pointer;
+}
+
+nav button {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: none;
+  padding: 0.5rem 0.3rem;
+  border: var(--border) 2px solid;
+  border-radius: 20px;
+}
+
+nav button > img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+nav button > img:nth-child(1) {
+  filter: invert(95%);
+}
+
+nav button:hover {
+  cursor: pointer;
+}
+
+nav button > div {
+  position: absolute;
+  background-color: var(--bg-light);
+  height: 1.9rem;
+  width: 2rem;
+  border: var(--border) 1px solid;
+  border-radius: 50%;
+  box-shadow: inset -6px 0px rgba(0, 0, 0, .1);
+  transform: translateX(2rem);
+  transition: all 400ms ease-in-out;
+}
+
+.nav-button-switch-light {
+  background-color: var(--bg-dark);
+  opacity: 0.99;
+  box-shadow: inset 6px 0px rgba(255, 255, 255, .1);
+  transform: translateX(0);
+}
+
+@media (max-width: 700px) {
+  nav {
+    padding: 1.5rem 3rem;
+  }
+
+  nav > ul {
+    gap: 2rem;
+  }
+
+  nav li > p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  nav p:hover {
+    background-position: -100% 0;
+  }
+}
+
+@media (max-width: 550px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  nav > ul {
+    gap: 2.5rem;
+  }
+}

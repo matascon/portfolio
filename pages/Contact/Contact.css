@@ -1,0 +1,157 @@
+.contact {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5.5rem;
+  padding: 3rem 8rem;
+  border-top: var(--border) 1px solid;
+  border-bottom: var(--border) 1px solid;
+}
+
+.contact > h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.contact > p {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.contact > ul {
+  display: flex;
+  gap: 8rem;
+}
+
+.contact > ul > li {
+  height: auto;
+  width: auto;
+}
+
+.contact img {
+  height: 150px;
+  width: 150px;
+}
+
+.contact img:hover {
+  cursor: pointer;
+}
+.form-gmail {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.4rem;
+  gap: 0.5rem;
+}
+
+.form-gmail > input, textarea {
+  border: var(--border) 2px solid;
+  border-radius: 15px;
+  outline: none;
+  resize: none;
+  font-size: 1rem;
+  padding: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-gmail > input {
+  width: 26rem;
+}
+
+.form-gmail > textarea {
+  width: 26rem;
+  height: 10rem;
+}
+
+.form-gmail > input:nth-child(9):hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+  .contact img {
+    filter: grayscale(100%);
+    transition: all 400ms ease-in-out;
+  }
+
+  .contact img:hover {
+    filter: grayscale(0);
+    transform: translateY(-0.3rem);
+  }
+
+  .contact > ul > li:nth-child(1) img:hover {
+    filter: drop-shadow(
+      0 0 10px rgb(255, 0, 0)
+    );
+  }
+
+  .contact > ul > li:nth-child(2) img:hover {
+    filter: drop-shadow(
+      0 0 10px rgb(0, 255, 0)
+    );
+  }
+
+  .form-gmail > input:nth-child(9) {
+    transition: all 400ms ease-in-out;
+  }
+  
+  .form-gmail > input:nth-child(9):hover {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact > ul > li:nth-child(1) img {
+    filter: drop-shadow(
+      0 0 10px rgba(255, 0, 0, .5)
+    );
+  }
+
+  .contact > ul > li:nth-child(2) img {
+    filter: drop-shadow(
+      0 0 10px rgba(0, 255, 0, .5)
+    );
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact img {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact {
+    gap: 4.5rem;
+    padding: 3rem 2rem;
+  }
+
+  .contact > h2 {
+    font-size: 2rem;
+  }
+
+  .contact > p {
+    font-size: 1rem;
+  }
+
+  .contact > ul {
+    gap: 3rem;
+  }
+
+  .contact img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .form-gmail > input {
+    width: 18rem;
+  }
+  
+  .form-gmail > textarea {
+    width: 18rem;
+    height: 10rem;
+  }
+}

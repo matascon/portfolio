@@ -1,7 +1,16 @@
 import './ProjectCard.css'
 
+const classProjectCard = () => {
+  console.log(document.body.classList);
+  if (document.body.classList.value === 'light') {
+    return "project-card-light";
+  } else {
+    return "project-card-dark";
+  }
+};
+
 export const ProjectCard = (project) => `
-<div class="project-card project-card-dark">
+<div class="project-card ${classProjectCard()}">
   <img src=${project.image} alt="${project.title}">
   <div>
     <a href="${project.github}" target="_blank">

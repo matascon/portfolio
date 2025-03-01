@@ -6,7 +6,7 @@ export const Footer = () => `
   <ul>
     <li>
       <a href="${info.github}" target="_blank">
-        <img src="/images/github_link.jpeg alt="Github Icon">
+        <img src="/images/github_link.jpeg" alt="Github Icon">
         <p>GitHub</p>
       </a>
     </li>

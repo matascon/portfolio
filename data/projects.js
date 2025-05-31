@@ -18,6 +18,14 @@ export const projects = [
     image: "/images/amazon_page.png",
     tech: ["HTML5", "CSS3", "JavaScript"],
     github: "https://github.com/matascon/amazon",
-    link: "https://amazon-project-tascon-without-dom.vercel.app/"
+    link: "https://amazon-project-tascon.vercel.app/"
+  },
+  {
+    title: "VanGogh",
+    description: "Pinterest-based image search engine",
+    image: "/images/vangogh_page.png",
+    tech: ["HTML5", "CSS3", "JavaScript", "Gemini AI"],
+    github: "https://github.com/matascon/vangogh",
+    link: "https://vangogh-mateo-tascon-gomez.vercel.app/"
   }
 ];

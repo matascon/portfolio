@@ -47,7 +47,8 @@
   gap: 0.5rem;
 }
 
-.form-gmail > input, textarea {
+.form-gmail > input,
+textarea {
   border: var(--border) 2px solid;
   border-radius: 15px;
   outline: none;
@@ -70,6 +71,10 @@
   cursor: pointer;
 }
 
+input[type="submit"] {
+  background-color: #fff;
+}
+
 @media (min-width: 1025px) {
   .contact img {
     filter: grayscale(100%);
@@ -82,21 +87,17 @@
   }
 
   .contact > ul > li:nth-child(1) img:hover {
-    filter: drop-shadow(
-      0 0 10px rgb(255, 0, 0)
-    );
+    filter: drop-shadow(0 0 10px rgb(255, 0, 0));
   }
 
   .contact > ul > li:nth-child(2) img:hover {
-    filter: drop-shadow(
-      0 0 10px rgb(0, 255, 0)
-    );
+    filter: drop-shadow(0 0 10px rgb(0, 255, 0));
   }
 
   .form-gmail > input:nth-child(9) {
     transition: all 400ms ease-in-out;
   }
-  
+
   .form-gmail > input:nth-child(9):hover {
     transform: scale(1.05);
   }
@@ -104,15 +105,11 @@
 
 @media (max-width: 1024px) {
   .contact > ul > li:nth-child(1) img {
-    filter: drop-shadow(
-      0 0 10px rgba(255, 0, 0, .5)
-    );
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.5));
   }
 
   .contact > ul > li:nth-child(2) img {
-    filter: drop-shadow(
-      0 0 10px rgba(0, 255, 0, .5)
-    );
+    filter: drop-shadow(0 0 10px rgba(0, 255, 0, 0.5));
   }
 }
 
@@ -149,7 +146,7 @@
   .form-gmail > input {
     width: 18rem;
   }
-  
+
   .form-gmail > textarea {
     width: 18rem;
     height: 10rem;

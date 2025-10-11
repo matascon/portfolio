@@ -71,8 +71,14 @@ textarea {
   cursor: pointer;
 }
 
-input[type="submit"] {
+.contact-form-button-send {
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-form-button-send-light {
   background-color: #fff;
+  color: #000;
 }
 
 @media (min-width: 1025px) {

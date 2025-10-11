@@ -1,8 +1,8 @@
-import './Contact.css';
-import { cleanPage } from '/utils/cleanPage.js';
+import "./Contact.css";
+import { cleanPage } from "/utils/cleanPage.js";
 
 export const Contact = () => {
-  const main = document.querySelector('main');
+  const main = document.querySelector("main");
   cleanPage(main);
   main.innerHTML = `
     <section class="contact">
@@ -27,18 +27,18 @@ export const Contact = () => {
         <input type="text" name="subject" placeholder="Subject" required>
         <label for="message">Message</label>
         <textarea name="message" placeholder="Insert your message"></textarea required>
-        <input type="submit" value="Send">
+        <input type="submit" value="Send" class="contact-form-button-send">
       </form>
     </section>
   `;
-  const gmailButton = document.querySelector('.gmail-button');
+  const gmailButton = document.querySelector(".gmail-button");
   gmailButton.addEventListener("click", () => {
     deployForm();
   });
-}
+};
 
 const deployForm = () => {
-  const form = document.querySelector('.form-gmail');
+  const form = document.querySelector(".form-gmail");
   form.style.display = "flex";
-  form.scrollIntoView({behavior: "smooth"});
+  form.scrollIntoView({ behavior: "smooth" });
 };

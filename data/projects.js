@@ -31,14 +31,13 @@ export const projects = [
     link: "https://vangogh-mateo-tascon-gomez.vercel.app/",
   },
   {
-    title: "TheWall",
+    title: "Aventura Trips",
     description:
-      "It’s a social network inspired by Reddit, kind of like a mini-Reddit",
-    image: "/images/thewall_page.webp",
+      "A travel platform where adventure companies offer their trips and travelers can discover, save favorites, and book the experiences they like most.",
+    image: "/images/aventuratrips_page.webp",
     tech: [
       "HTML5",
       "CSS3 Modules",
-      "Typescript",
       "React",
       "Java",
       "Spring Boot",
@@ -46,8 +45,9 @@ export const projects = [
       "Docker",
       "Nginx",
       "AWS EC2",
+      "Vercel"
     ],
-    github: "https://github.com/matascon/thewall",
-    link: "https://the-little-wall.com/",
+    github: "https://github.com/matascon/TFG-Frontend",
+    link: "https://aventuratrips.vercel.app/",
   },
 ];

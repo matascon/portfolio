@@ -10,7 +10,9 @@ export const Home = () => {
   <section class="home">
     <p>Hello World, I'm</p>
     <h1>Mateo Tascon</h1>
-    <p>I am currently a Full Stack Development student at Prometeo by thePower. I have been coding since I was 14 years old when I first studied electronics in school, programming with Arduino and assembler. Later, I realized that I was born to code when I joined 42Madrid, as it gave me the opportunity to experiment with new programming languages such as C, C++, and Java. I also gained significant experience by working on projects with my peers at the center. Now, I enjoy creating interactive apps using HTML, CSS, and JavaScript. I give my best every second while coding. In simple terms, I am truly passionate about the programming world.</p>
+    <p>I'm Mat — a developer driven by resilience, curiosity, and a constant desire to grow. Every project here reflects the lessons learned along the way: the perseverance to push through complex problems, the adaptability to embrace new technologies, and the passion for building things that truly matter.</p>
+    <p>From backend architectures to full-stack applications, my work is shaped by dedication, attention to detail, and a commitment to continuous learning. I believe great software isn't just about clean code — it's about the mindset behind it: staying focused when things get tough, staying humble when they go right, and always striving for excellence.</p>
+    <p>Take a look around. I hope you find something that inspires you as much as building it inspired me.</p>
     <div>
       <p id="projectslink">Explore My Portfolio</p>
     </div>
